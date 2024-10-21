@@ -6,7 +6,7 @@
     <title>Bai3</title>
   </head>
   <body>
-    <h1 style="text-align: center">Đăng ký tài khoản</h1>
+    <h1>Đăng ký tài khoản</h1>
     <hr />
     <form>
       <label for="login">Tên đăng nhập:</label>
@@ -41,12 +41,15 @@
         <option value="KTPM01">KTPM01</option>
       </select>
       <br />
-      <label>Giới tính:</label>
-      <input type="radio" id="nam" name="fav_language" value="nam" />
-      <label for="nam">Nam</label>
-      <input type="radio" id="nữ" name="fav_language" value="nữ" />
-      <label for="nữ">Nữ</label>
-      <br />
+      <div>
+        <label>Giới tính:</label>
+        <input type="radio" id="nam" value="nam" />
+        <label for="nam">Nam</label>
+        <input type="radio" id="nữ" value="nữ" />
+        <label for="nữ">Nữ</label>
+        <br />
+      </div>
+
       <label for="phone">Số điện thoại:</label>
       <br />
       <input id="phone" name="phone" />

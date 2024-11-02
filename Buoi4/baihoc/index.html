@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS tiếp theo</title>
+    <style>
+      h1,
+      h2,
+      p {
+        color: red;
+      }
+      .content p {
+        color: aquamarine;
+      }
+      .wrapper > p {
+        color: violet;
+      }
+      /* Chọn 1 phần tử cùng cấp */
+      .heading + .content {
+        background-color: #ddd;
+      }
+      /* Chọn tất cả phần tử cùng cấp với phần tử được chọn*/
+      .heading ~ .content {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="heading">
+        <h1 class="title">Title</h1>
+        <h2 class="sub-title">Sub title</h2>
+      </div>
+      <div class="content">
+        <p class="first-para">First paragraph</p>
+        <p class="second-para">Second paragraph</p>
+        <p class="third-para">Third paragraph</p>
+      </div>
+      <div class="content">
+        <p class="fourth-para">Fourth paragraph</p>
+        <p class="fifth-para">Fifth paragraph</p>
+        <p class="sixth-para">Sixth paragraph</p>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+        nulla!
+      </p>
+    </div>
+  </body>
+</html>

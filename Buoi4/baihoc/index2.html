@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesudo-class Selector</title>
+    <style>
+      .wrap .item {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      .wrap .item:first-child {
+        color: red;
+      }
+      .wrap .item:last-child {
+        color: violet;
+      }
+      .wrap .item:nth-child(2n + 1) {
+        background-color: #ddd;
+      }
+      .wrap .item:not(not-select) {
+        color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="wrap">
+      <li class="item not-select">Item 1</li>
+      <li class="item">Item 2</li>
+      <li class="item">Item 3</li>
+      <li class="item">Item 4</li>
+      <li class="item">Item 5</li>
+    </ul>
+  </body>
+</html>

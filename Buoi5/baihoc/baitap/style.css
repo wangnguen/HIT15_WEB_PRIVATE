@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-one: #e2f342;
+  --color-two: #f9dd9c;
+}
+body {
+  background-color: #fbf9e2;
+  font-weight: 600;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style-type: none;
+}
+.active {
+  background: var(--color-one);
+  color: c55a11;
+  border-radius: 5px;
+  color: red;
+}
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding: 10px;
+  margin: 10px auto;
+}
+/*Header*/
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+  gap: 20px;
+}
+
+.header .container input {
+  font-size: 16px;
+  padding: 15px;
+  border: 2px solid var(--color-two);
+  border-radius: 15px;
+  flex-grow: 1;
+}
+.header .container li {
+  padding: 10px;
+}
+/* End Header*/
+
+/* Section One*/
+.section-one .container img {
+  width: 50%;
+  border-radius: 10px;
+}
+.section-one .container {
+  display: flex;
+  justify-content: space-between;
+}
+.section-one .container .inner-content {
+  text-align: right;
+}
+.section-one .container .inner-content h1 {
+  font-size: 4rem;
+}
+.section-one .container .inner-content p {
+  font-size: 20px;
+}
+.section-one .container .inner-content button {
+  background-color: var(--color-one);
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin: 10px 0;
+}
+/* End Section One*/
+
+/* Section Two*/
+.section-two p {
+  background: var(--color-two);
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+}
+/* End Section Two*/
+
+/* Section Three */
+.section-three .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-three .container img {
+  width: 85%;
+  margin: 10px;
+  border-radius: 10px;
+}
+.section-three .container .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-three .container .box h3 {
+  background: var(--color-one);
+  padding: 12px;
+  border-radius: 10px;
+  width: 85%;
+  text-align: center;
+} /* End Section Three */

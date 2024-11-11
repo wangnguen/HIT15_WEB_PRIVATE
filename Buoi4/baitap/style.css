@@ -1,0 +1,43 @@
+.content {
+  background: #0065bb;
+  padding: 60px 30px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.content::before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 120px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  opacity: 20%;
+}
+
+.content::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 200px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  opacity: 20%;
+}
+.content .inner-content {
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+.content .inner-content::first-letter {
+  font-size: 40px;
+}
+.content .inner-content::first-line {
+  text-transform: uppercase;
+}

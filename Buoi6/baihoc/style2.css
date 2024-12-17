@@ -1,0 +1,26 @@
+/* @keyframes moveRight {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(200px);
+	}
+} */
+@keyframes bounce {
+	0%,
+	100% {
+		transform: translateY(0); /* Ở vị trí gốc */
+	}
+	50% {
+		transform: translateY(-100px); /* Nâng lên 50px tại giữa quá trình */
+	}
+}
+.box {
+	position: relative;
+	top: 300px;
+	left: 250px;
+	width: 100px;
+	height: 100px;
+	background-color: lightblue;
+	animation: bounce 2s ease-in-out 0s infinite reverse;
+}
